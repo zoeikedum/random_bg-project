@@ -7,8 +7,6 @@ body {
   font-family: Arial, sans-serif;
   color: white;
   background: linear-gradient(135deg, #2196F3, #E91E63); /* starting gradient */
-  transition: background 0.8s ease;
-  overflow: hidden;
 }
 
 button {
@@ -19,7 +17,6 @@ button {
   border-radius: 10px;
   cursor: pointer;
   color: white;
-  backdrop-filter: blur(6px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s, background-color 0.3s;
 }
@@ -32,7 +29,7 @@ button:hover {
 .circle {
   position: absolute;
   border-radius: 50%;
-  opacity: 0.4;
+  opacity: 0.07;
   animation: float 10s infinite;
 }
 
