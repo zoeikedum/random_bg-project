@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #2196F3, #E91E63); /* starting gradient */
+  transition: background 0.8s ease;
+  overflow: hidden;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.2);
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: float 10s infinite;
+}
+
+.circle.one {
+  width: 200px;
+  height: 200px;
+  background-color: #FCE4EC;
+  top: 50px;
+  left: 80px;
+ 
+}
+
+.circle.two {
+  width: 300px;
+  height: 300px;
+  background-color: #BBDEFB;
+  bottom: 50px;
+  right: 60px;
+  animation-delay: 2s;
+}
+
+.circle.three {
+  width: 150px;
+  height: 150px;
+  background-color: #C8E6C9;
+  top: 150px;
+  right: 200px;
+  animation-delay: 4s;
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
